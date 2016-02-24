@@ -1,1 +1,1 @@
-console.log('Hello!');
+var angular = require('angular');

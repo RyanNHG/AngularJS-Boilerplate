@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
-app.use('/static', express.static(__dirname + '/frontend/dist'));
+app.use('/static', express.static(__dirname + '/frontend/dist/static'));
 
 app.use(function(req, res){
 	res.status(200).sendFile(__dirname+'/frontend/dist/index.html');
