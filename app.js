@@ -6,11 +6,11 @@ var router = express.Router();
 
 var bodyParser = require('body-parser');
 
-var api = require('./backend/api');
+var api = require('./api');
 
 // Serve static files
 app.use('/node_modules', express.static(__dirname + '/node_modules')); //  TODO: Remove this
-app.use('/static', express.static(__dirname + '/frontend/dist/static'));
+app.use('/static', express.static(__dirname + '/webapp/dist/static'));
 
 // Configure body-parser for POST requests
 app.use(bodyParser.urlencoded({extended: true}));
@@ -22,7 +22,7 @@ app.use('/api', router);
 
 //  Send all other requests to the webapp.
 app.use(function(req, res){
-	res.status(200).sendFile(__dirname+'/frontend/dist/index.html');
+	res.status(200).sendFile(__dirname+'/webapp/dist/index.html');
 });
 
 //  Start the server
