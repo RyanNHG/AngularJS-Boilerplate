@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="app">
   <head>
+    <base href="/">
     <title>My AngularJS App</title>
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
     <script type="text/javascript" src="/static/bundle.js"></script>
   </head>
   <body>
-    <h3>According to Math: 1 + 2 = {{1 + 2}}</h3>
+    <navbar></navbar>
+    <div ng-view></div>
   </body>
 </html>

@@ -1,3 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+@import 'colors';
+@import 'navbar';
+
+html, body{
+    height: 100%;
+}
+
 body {
-    font-family: Arial;
+    flex-direction: column;
+    font-family: Roboto;
+}
+
+body,
+h1, h2, h3, h4, h5, h6, p,
+nav, div, span,
+ul, li {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }

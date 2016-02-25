@@ -11,6 +11,7 @@ var api = require('./api');
 // Serve static files
 app.use('/node_modules', express.static(__dirname + '/node_modules')); //  TODO: Remove this
 app.use('/static', express.static(__dirname + '/webapp/dist/static'));
+app.use('/app', express.static(__dirname + '/webapp/dist/app'));
 
 // Configure body-parser for POST requests
 app.use(bodyParser.urlencoded({extended: true}));
