@@ -12,17 +12,20 @@ function($scope, $location){
             },
             {
                 label: 'Dashboard',
-                path: '/dashboard'
+                path: '/dashboard',
+                icon: 'dashboard'
             },
             {
                 label: 'Settings',
-                path: '/settings'
+                path: '/settings',
+                icon: 'settings'
             }
         ],
         right: [
             {
                 label: 'Profile',
                 path: '/profile',
+                icon: 'face'
             }
         ]
     };

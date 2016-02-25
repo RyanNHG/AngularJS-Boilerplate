@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
@@ -20,4 +21,19 @@ ul, li {
     display: flex;
     margin: 0;
     padding: 0;
+}
+
+.page {
+    flex: 1;
+    justify-content: center;
+    background-color: $light-gray;
+
+    >.container {
+        background-color: $white;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
 }

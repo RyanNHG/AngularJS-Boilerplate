@@ -9,11 +9,6 @@ navbar {
         background-color: $nav-bg-color;
         color: white;
 
-        .container {
-            width: 100%;
-            max-width: 1280px;
-        }
-
         ul.nav-links {
 
             &.left{
@@ -40,6 +35,14 @@ navbar {
                 &.active,
                 &:hover {
                     background-color: $active-navlink-bg-color;
+                }
+
+                >span[has-icon="true"] {
+                    padding-left: .25rem;
+
+                    @media screen and (max-width: 480px) {
+                        display: none;
+                    }
                 }
 
             }
