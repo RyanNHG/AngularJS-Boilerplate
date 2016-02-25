@@ -3,25 +3,11 @@ module.exports = ['$http', function($http) {
     var _url = 'http://localhost:8080';
 
     var _getBears = function(){
-        $http.get(_url + '/api/bears').then(
-            function(res){
-                console.log(res.data);
-            },
-            function(err) {
-                console.log(err);
-            }
-        );
+        return $http.get(_url + '/api/bears');
     };
 
     var _getBearById = function(id){
-        $http.get(_url + '/api/bears/' + id).then(
-            function(res){
-                console.log(res.data);
-            },
-            function(err) {
-                console.log(err);
-            }
-        );
+        return $http.get(_url + '/api/bears/' + id);
     };
 
     var _createBear = function(name) {
