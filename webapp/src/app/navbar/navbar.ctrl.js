@@ -42,7 +42,13 @@ function($scope, $location, BearDataService){
 
     //  Go to another page
     this.go = function(path) {
-        BearDataService.getBears();
+        BearDataService.createBear('Ryan').then(
+            function(res) {
+                console.log('Bear created!');
+                BearDataService.getBears();
+            },function(err) {
+                console.log(err);
+            });
         $location.path(path);
     };
 
