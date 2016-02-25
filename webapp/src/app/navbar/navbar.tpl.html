@@ -1,14 +1,10 @@
 <nav class="navbar">
 
   <div class="container">
-    <ul class="nav-links left">
-      <li class="brand active">Bears</li>
-      <li>Dashboard</li>
-      <li>Settings</li>
-    </ul>
-
-    <ul class="nav-links right">
-      <li>Profile</li>
+    <ul ng-repeat="(i, links) in $ctrl.navLinks" class="nav-links {{i}}">
+      <li ng-repeat="link in links" 
+        ng-class="{brand: link.isBrand != null, active: $ctrl.path == link.path}" 
+        ng-click="$ctrl.go(link.path)">{{link.label}}</li>
     </ul>
   </div>
 

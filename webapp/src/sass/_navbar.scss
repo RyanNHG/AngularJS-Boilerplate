@@ -22,9 +22,16 @@ navbar {
 
             >li {
                 
+                font-size: 1rem;
                 align-items: center;
                 padding: 0 1rem;
                 cursor: pointer;
+
+                &.brand {
+                    font-family: Roboto Slab;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
 
                 &.active {
                     cursor: default;
