@@ -1,5 +1,5 @@
-module.exports = ['$scope', '$location', 
-function($scope, $location){
+module.exports = ['$scope', '$location', 'BearDataService',
+function($scope, $location, BearDataService){
 
     var self = this;
 
@@ -42,6 +42,7 @@ function($scope, $location){
 
     //  Go to another page
     this.go = function(path) {
+        BearDataService.getBears();
         $location.path(path);
     };
 
