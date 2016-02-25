@@ -1,1 +1,11 @@
-<li>{{$ctrl.bear.name}}</li>
+<li>
+  <h3>{{$ctrl.bear.name}}</h3>
+  <div class="options">
+    <button ng-click="$ctrl.editBear()" class="primary">
+      <i class="material-icons">edit</i>
+    </button>
+    <button ng-click="$ctrl.deleteBear()" class="danger">
+      <i class="material-icons">delete</i>
+    </button>
+  </div>
+</li>

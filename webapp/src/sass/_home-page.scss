@@ -1,0 +1,14 @@
+
+@import 'bear-panel';
+
+home-page {
+
+    .page-header {
+        padding: 1rem;
+    }
+
+    .bear-list {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+}
