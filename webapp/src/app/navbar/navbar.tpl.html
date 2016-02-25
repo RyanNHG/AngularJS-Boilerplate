@@ -1,5 +1,4 @@
-<nav class="navbar">
-
+<nav class="navbar {{$ctrl.navColor}}">
   <div class="container">
     <ul ng-repeat="(i, links) in $ctrl.navLinks" class="nav-links {{i}}">
       <li ng-repeat="link in links" 
@@ -10,5 +9,4 @@
       </li>
     </ul>
   </div>
-
 </nav>
